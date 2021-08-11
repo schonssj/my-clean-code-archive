@@ -59,7 +59,7 @@ namespace CleanCode.Names.MeaningfulNames
         }
 
         /// <summary>
-        /// Instead of continue using an int array, we can create a class for the cells, which can have a function that represents if the cell was flagged or not.
+        /// Instead of continue using an integer array, we can create a class for the cells which can have a function that represents if the cell was flagged or not.
         /// </summary>
         public List<Cell> GetFlaggedCellsImproved()
         {
@@ -69,6 +69,24 @@ namespace CleanCode.Names.MeaningfulNames
                 if (cell.IsFlagged)
                     flaggedCells.Add(cell);
             return flaggedCells;
+        }
+
+        /// <summary>
+        /// Another bad practice as the parameters are totally meaningfulness.
+        /// </summary>
+        public static void CopyChars(char[] a1, char[] a2)
+        {
+            for (int i = 0; i < a1.ToString().Length; i++)
+                a2[i] = a1[i];
+        }
+
+        /// <summary>
+        /// This one seems better as we are providing meaningful names to the parameters.
+        /// </summary>
+        public static void CopyCharsImproved(char[] source, char[] destination)
+        {
+            for (int i = 0; i < source.ToString().Length; i++)
+                destination[i] = source[i];
         }
     }
 
