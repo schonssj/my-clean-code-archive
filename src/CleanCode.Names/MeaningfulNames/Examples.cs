@@ -90,8 +90,10 @@ namespace CleanCode.Names.MeaningfulNames
         }
     }
 
+    #region Helper class.
     public class Cell
     {
         public bool IsFlagged { get; }
     }
+    #endregion
 }

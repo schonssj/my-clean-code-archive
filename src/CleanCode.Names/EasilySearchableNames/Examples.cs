@@ -11,7 +11,7 @@
         #endregion
 
         /// <summary>
-        /// A bad practice as this name doesn't favor its own research.
+        /// A bad practice as this name doesn't favor its own search.
         /// For example, if we search for 'e' in this solution, there'll be so many results that could difficult our search for this variable.
         /// </summary>
         public int e;

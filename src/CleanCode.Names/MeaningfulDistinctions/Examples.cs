@@ -45,16 +45,16 @@
     public class CustomerAccount
     {
         /// <summary>
-        /// Some bad practices. Which one do we should call to get data of an active account?
+        /// Some bad practices. Which one should we call to get data of an active account?
         /// </summary>
         public Account GetActiveAccount()
         {
-            // Some database logic happens here...
+            /// Some database logic happens here...
             return new Account();
         }
         public AccountInfo GetActiveAccountInfo()
         {
-            // Some database logic happens here...
+            /// Some database logic happens here...
             return new AccountInfo();
         }
     }
