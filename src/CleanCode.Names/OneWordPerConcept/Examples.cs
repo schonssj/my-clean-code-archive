@@ -39,7 +39,6 @@ namespace CleanCode.Names.OneWordPerConcept
     }
 
     #region Helper classes.
-
     public class Customer
     {
         /// <summary>
